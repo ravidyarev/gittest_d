@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "6a41678f704deb3d62ae",
+  "position": {
+    "x": 754.56040480708418,
+    "y": 17.811511701454776,
+    "z": 2,
+    "height": 623.40290955091712,
+    "width": 526.24920936116382
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sakila actor"
+                    }
+                  },
+                  "Property": "first_name"
+                }
+              },
+              "queryRef": "sakila actor.first_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sakila actor"
+                    }
+                  },
+                  "Property": "last_name"
+                }
+              },
+              "queryRef": "sakila actor.last_name"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "sakila actor"
+                  }
+                },
+                "Property": "first_name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
